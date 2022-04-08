@@ -1,3 +1,6 @@
+<script lang="ts">
+</script>
+
 <main class="bg-home-desktop min-h-screen">
 	<div class="container mx-auto flex gap-80">
 		<div>
