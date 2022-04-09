@@ -1,7 +1,8 @@
 <script lang="ts">
+	import Main from '../components/Main.svelte';
 </script>
 
-<main class="bg-home-desktop min-h-screen">
+<Main pageType="home">
 	<div class="container mx-auto flex gap-80">
 		<div>
 			<h1 class="text-[28px] text-text-primary">SO, YOU WANT TO TRAVEL TO</h1>
@@ -12,12 +13,12 @@
 				out of this world experience!
 			</p>
 		</div>
-		<div>
-			<a href="">
+		<div class="flex items-end">
+			<a href="/destination">
 				<div class="bg-white h-64 w-64 flex justify-center items-center rounded-full">
 					<span>EXPLORE</span>
 				</div>
 			</a>
 		</div>
 	</div>
-</main>
+</Main>
