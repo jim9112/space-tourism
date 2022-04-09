@@ -2,6 +2,10 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		fontFamily: {
+			barlow: ['Barlow Condensed', 'sans-serif'],
+			bellefair: ['Bellefair', 'serif']
+		},
 		extend: {
 			backgroundImage: {
 				'home-desktop': "url('/assets/home/background-home-desktop.jpg')",
@@ -11,7 +15,8 @@ const config = {
 			},
 			colors: {
 				'text-primary': '#D0D6F9',
-				grey: '#979797'
+				grey: '#979797',
+				black: '#0B0D17'
 			}
 		}
 	},
