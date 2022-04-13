@@ -4,6 +4,11 @@
 	import RoundedLink from '../components/technology/RoundedLink.svelte';
 	import { technology } from '../lib/data';
 	let techIndex = 0;
+	const handleClick = (e) => {
+		if (e.target.nodeName === 'LI') {
+			techIndex = parseInt(e.target.dataset.techindex);
+		}
+	};
 </script>
 
 <Main pageType="technology">
@@ -14,10 +19,10 @@
 
 		<div class="flex w-screen justify-end gap-20">
 			<div class="flex gap-20">
-				<ul class="flex flex-col gap-8">
-					<RoundedLink>1</RoundedLink>
-					<RoundedLink>2</RoundedLink>
-					<RoundedLink>3</RoundedLink>
+				<ul class="flex flex-col gap-8" on:click={handleClick}>
+					<RoundedLink techIndex="0">1</RoundedLink>
+					<RoundedLink techIndex="1">2</RoundedLink>
+					<RoundedLink techIndex="2">3</RoundedLink>
 				</ul>
 				<div class="max-w-lg">
 					<p class="font-barlow text-text-primary text-base">The Terminology</p>
